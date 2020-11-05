@@ -1,0 +1,777 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../img/ヘッダー画像.jpg");
+}
+
+.header-nav {
+  /* background: forestgreen; */
+  background: #82c12f;
+  padding: 15px;
+  padding-right: 0;
+  margin-top: 0;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-nav ul li {
+  width: 150px;
+  padding: 15px;
+  background: #f05945;
+  margin-right: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.header-nav ul li:hover {
+  opacity: 0.7;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+
+.header-nav ul li:first-of-type {
+  margin-right: auto;
+}
+
+@media screen and (max-width:750px) {
+  .header-nav ul li:first-of-type{
+    margin: auto;
+
+  }
+
+  .header-nav ul li:nth-of-type(2) {
+    display: none;
+  }
+  .header-nav ul li:nth-of-type(3) {
+    display: none;
+  }
+}
+
+header h1 {
+  width: 500px;
+  font-size: 42px;
+  /* background: hotpink; */
+  position: relative;
+  margin: 0;
+  left: 30%;
+  top: 10%;
+}
+
+header ul:nth-child(3) {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  top: 40%;
+  position: relative;
+  transform: translateY(-40%);
+}
+
+header ul:nth-child(3) li {
+  background: #82c12f;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+}
+
+@media screen and (max-width:750px) {
+  header ul:nth-child(3) li {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+header ul:nth-child(3) li h2 {
+  border-bottom: solid 5px #fd7923;
+  color: white;
+  font-size: xx-large;
+  margin-top: 0;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+@media screen and (max-width:750px) {
+  header ul:nth-child(3) li h2 {
+    font-size: x-large;
+  }
+}
+/* PCファーストで書きたい */
+
+
+.nav-container {
+  background: red;
+}
+
+nav.global {
+  height: 80px;
+  padding: 30px;
+  background: coral;
+  background: #00CC00;
+  background: #82c12f;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+}
+
+.global ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.global ul li {
+  width: 360px;
+  background: #f05945;
+  border-radius: 15px;
+  text-align: center;
+  font-size: x-large;
+  margin: auto;
+  line-height: 80px;
+}
+
+@media screen and (max-width:750px) {
+  .global ul li {
+    width: 250px;
+    font-size: large;
+  }
+}
+
+.global ul li:hover {
+  opacity: 0.7;
+}
+
+.global li a {
+  color: white;
+  text-decoration: none;
+}
+
+.formfa {
+  background: #bddb63;
+  text-align: center;
+  position: relative;
+}
+
+.formfa h2 {
+  text-align: center;
+  font-size: xx-large;
+  background: #82c12f;
+  margin-top: 0;
+  height: 100px;
+  line-height: 100px;
+  color: white;
+}
+
+form {
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+
+.formintro {
+  font-size: x-large;
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+}
+
+textarea {
+  width: 330px;
+  height: 150px;
+}
+
+form p {
+  font-size: small;
+  top: 0;
+  margin: 0;
+}
+
+.negative {
+  background-image: url(../img/困る.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.negative h2 {
+  background: violet;
+  background: #82c12f;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  margin-top: 0;
+  font-size: xx-large;
+  color: white;
+}
+
+.negative ul {
+  list-style: none;
+  position: relative;
+  left: 100px;
+  background: white;
+  width: 550px;
+  top: 50px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width:750px) {
+  .negative ul {
+    width: 400px;
+    height: auto;
+    left: 40px;
+  }
+}
+
+.negative ul li {
+  font-size: x-large;
+  margin: 30px 0;
+  font-weight: bold;
+}
+
+@media screen and (max-width:750px) {
+  .negative ul li {
+    font-size: large;
+  }
+}
+
+.negative ul li::before {
+  content: "✓";
+  color: #fd7923;
+
+}
+
+.advantage {
+  background: #bddb63;
+  height: auto;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.advantage h2 {
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  background: #82c12f;
+  margin-top: 0;
+  font-size: xx-large;
+  color: white;
+}
+
+.advantage ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+}
+
+@media screen and (max-width:750px) {
+  .advantage ul {
+    display: block;
+  }
+}
+
+.advantage ul li {
+  background: khaki;
+  background: #e8ee95;
+  background:  white;
+  width: 300px;
+  height: 260px;
+  /* line-height: 230px; */
+  margin: auto;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width:750px) {
+  .advantage ul li {
+    margin-bottom: 40px;
+  }
+}
+
+.advantage ul li h2 {
+  /* margin: auto; */
+  font-size: xx-large;
+  white-space: nowrap;
+  position: relative;
+  line-height: 50px;
+  height: auto;
+  top: 30px;
+  background: white;
+  border-bottom: solid 5px #fd7923;
+  color: black;
+}
+
+.advantage ul li p {
+  font-size: medium;
+  margin-top: 80px;
+}
+
+.flow {
+  /* position: relative; */
+  height: auto;
+  padding-bottom: 50px;
+  background: #bddb63;
+}
+
+.flow h2 {
+  margin-top: 0;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  font-size: xx-large;
+  background: #82c12f;
+  color: white;
+}
+
+.flow ul:nth-of-type(1) {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding-left: 0;
+  /* background: chocolate; */
+}
+.flow ul:nth-of-type(2) {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+@media screen and (max-width:750px) {
+  .flow ul:nth-of-type(1) {
+    display: block;
+  }
+  .flow ul:nth-of-type(2) {
+    display: block;
+  }
+}
+
+.flow ul li {
+  background: #82c12f;
+  background: white;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  position: relative;
+}
+
+@media screen and (max-width:750px) {
+  .flow ul li {
+    margin: 20px auto;
+  }
+}
+
+
+.flow ul li p {
+  font-size: xx-large;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: cornsilk; */
+}
+
+.flow ul li p::first-line {
+  font-weight: bold;
+}
+
+.flow ul li p::first-letter {
+  font-size: xx-large;
+  color: #f05945;
+}
+
+.flow ul li p span {
+  color: #fd7923;
+}
+
+.flow ul:last-of-type {
+  padding-left: 0;
+  text-align: center;
+  font-size: 60px;
+  /* padding-bottom: 100px; */
+  margin-bottom: ;
+}
+
+.join{
+  background: white;
+  border-radius: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  text-align: center;
+  /* line-height: 250px; */
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.join p {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+  margin-top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.join p::first-letter {
+  font-size: xx-large;
+  color: #f05945;
+}
+
+.join p::after {
+  content: "約一ヶ月！";
+  font-size: xx-large;
+  color: #fd7923;
+  display: block;
+}
+
+.voice {
+  height: auto;
+  padding-bottom: 50px;
+  background: #bddb63;
+}
+
+.voice h2 {
+  background: #82c12f;
+  /* background:  #bddb63; */
+  text-align: center;
+  margin-top: 0;
+  height: 100px;
+  line-height: 100px;
+  font-size: xx-large;
+  color: white;
+}
+
+.voice ul {
+  position: relative;
+  justify-content: center;
+  padding: 0;
+  /* background: violet; */
+}
+
+.voice ul li {
+  display: flex;
+  background: white;
+  position: relative;
+  margin: 50px auto;
+  width: 1100px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width:750px) {
+  .voice ul li {
+    width: 650px;
+  }
+}
+
+.voice ul li p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 700px;
+  /* background: crimson; */
+  right: 70px;
+  font-size: x-large;
+}
+
+@media screen and (max-width:750px) {
+  .voice ul li p {
+    width: 450px;
+    right: 10px;
+    font-size: large;
+  }
+}
+
+.voice ul img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width:750px) {
+  .voice ul img {
+    width: 130px;
+    height: auto;
+  }
+}
+
+.voice ul li span {
+  background: cyan;
+  background: white;
+   border-radius: 50%;
+   width: 300px;
+   height: 300px;
+   /* left: 150px; */
+   position: relative;
+}
+
+@media screen and (max-width:750px) {
+  .voice ul li span {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+.voice ul li:first-of-type span:first-of-type::after {
+  content: "Aさん";
+  display: block;
+  position: absolute;
+  left: 70px;
+  font-size: x-large;
+  top: 80%;
+  transform: translateY(-80%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.voice ul li:last-of-type span:first-of-type::after {
+  content: "Bさん";
+  display: block;
+  position: absolute;
+  left: 70px;
+  font-size: x-large;
+  top: 80%;
+  transform: translateY(-80%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width:750px) {
+  .voice ul li:first-of-type span:first-of-type::after {
+    font-size: large;
+    top: 88%;
+  }
+  .voice ul li:last-of-type span:first-of-type::after {
+    font-size: large;
+    top: 88%;
+  }
+}
+
+
+.voice ul li:first-of-type p::before {
+  content: "とても親切で助かりました！";
+  /* background: crimson; */
+  display: block;
+   color: #fd7923;
+   /* background: lightgreen; */
+}
+.voice ul li:last-of-type p::before {
+  content: "他には無い求人が多く自分に合ったものを選べました！";
+  /* background: crimson; */
+  display: block;
+   color: #fd7923;
+}
+
+.ques {
+  padding-bottom: 50px;
+  background: #bddb63;
+  height: auto;
+
+}
+
+.ques h2 {
+  text-align: center;
+  font-size: xx-large;
+  height: 100px;
+  line-height: 100px;
+  background:  #82c12f;
+  margin-top: 0;
+  color: white;
+}
+
+.ques ul {
+  /* display: flex; */
+  list-style: none;
+  background: gold;
+  background: white;
+  width: 900px;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px auto 30px;
+}
+
+@media screen and (max-width:750px) {
+  .ques ul {
+    width: 650px;
+  }
+}
+
+.ques ul li:first-of-type {
+  width: 500px;
+  /* background: chartreuse; */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: x-large;
+  color: #38549c;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  /* margin-left: auto; */
+  /* margin-right: 50px; */
+}
+
+.ques ul li:first-of-type::before {
+  content: "Q.";
+  color: #38549c;
+  font-size: x-large;
+}
+
+.ques ul li:last-of-type {
+  width: 820px;
+  /* background: chartreuse; */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 40px;
+  border-bottom: solid 1px;
+}
+
+@media screen and (max-width:750px) {
+  .ques ul li:last-of-type {
+    width: 550px;
+  }
+}
+
+.ques ul li:last-of-type::before {
+  content: "A.";
+  color: red;
+  font-size: x-large;
+}
+
+.lastformfa {
+  background: #bddb63;
+  position: relative;
+  /* display: flex; */
+  text-align: center;
+  height: auto;
+}
+
+.lastformfa h2 {
+  text-align: center;
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  background: #82c12f;
+  /* background:  #bddb63; */
+  margin-bottom: 100px;
+  margin-top: 0;
+  color: white;
+}
+
+.box {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lastformfa .comment {
+  position: relative;
+  /* top: 100px; */
+}
+
+.lastformfa .comment::before {
+  content: "介護求人は私たちにお任せください！";
+  display: block;
+  color: #f05945;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.lastformfa img {
+  width: 500px;
+  height: auto;
+  /* background: crimson; */
+}
+
+.overview {
+  text-align: center;
+  height: 70vh;
+}
+
+.overview h2 {
+  text-align: center;
+  background:  #82c12f;
+  height: 100px;
+  line-height: 100px;
+  margin-top: 0;
+  color: white;
+}
+
+.overview table {
+  text-align: left;
+  background: white;
+}
+
+
+.overview img {
+  width: 400px;
+  height: auto;
+}
+
+.overview-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  background:  #bddb63;
+  height: 60px;
+}
+
+footer p {
+  margin-top: 0;
+  font-size: small;
+  line-height: 60px;
+}
+
+.point {
+  color: #fd7923;
+}
